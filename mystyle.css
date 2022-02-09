@@ -32,6 +32,10 @@
     padding-bottom: 20px;
 }
 
+.sub-text {
+    font-size: 1em;
+}
+
 .welcome-button {
     padding: 20px;
 }

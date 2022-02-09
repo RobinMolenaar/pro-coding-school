@@ -11,8 +11,7 @@
     <div class="heading-container">
         <div class='heading-text-container'>
             <p class="heading-text">Welkom bij het stem bureau</p>   
-            <input type="text">
-            <button onclick="location.href='partijselectie.php'" class='welcome-button' type='button'></button>
+            <button onclick="location.href='inlog.php'" class='welcome-button' type='button'>Breng uw stem uit</button>
         </div>     
     </div>   
 
