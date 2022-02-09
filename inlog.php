@@ -13,7 +13,7 @@
                 <p class="heading-text">Vul hier uw code in</p>   
                 <div class="input-container">
                     <input class="code-input" type="text" placeholder="uw code">
-                    <button onclick="location.href='inlog.php'" class='welcome-button' type='button'>Login</button>
+                    <button onclick="location.href='partijselectie.php'" class='welcome-button' type='button'>Login</button>
                 </div>  
             </div>     
         </div>   
