@@ -39,3 +39,15 @@
 .heading-text-container {
     margin-top: 20%;
 }
+
+.input-container {
+    margin: auto;
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    background-color: pink;
+}
+
+.code-input {
+    padding: 10px;
+}
