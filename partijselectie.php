@@ -8,7 +8,6 @@
     <title>Partij Selectie</title>
 </head>
 <body>
-    <header class="heading-container">
         <p class="heading-text">Kies hier u gewenste partij.</p>
     </header>
     <br>
