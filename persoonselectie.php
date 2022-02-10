@@ -21,9 +21,9 @@
         <input type="submit" value="submit">
     </form> -->
 
-
+     <!-- dropdown VVD -->
     <div class="w3-dropdown-click">
-  <button onclick="myFunction()" class="w3-button w3-black">Click Me!</button>
+  <button onclick="myFunction()" class="w3-button w3-black">VVD</button>
   <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
   <form method="post" action="index.php">
         <input type="radio" value="klaas" id="1" name="persoon">
@@ -39,9 +39,9 @@
   </div>
 </div>
 
-
+<!-- dropdown PVDA -->
 <div class="w3-dropdown-click">
-  <button onclick="myFunction2()" class="w3-button w3-black">Click Me!</button>
+  <button onclick="myFunction2()" class="w3-button w3-black">PVDA</button>
   <div id="Demo2" class="w3-dropdown-content w3-bar-block w3-border">
   <form method="post" action="index.php">
         <input type="radio" value="jan" id="1" name="persoon">
