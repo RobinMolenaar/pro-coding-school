@@ -8,7 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hallo</h1>
     <!-- <form method="post" action="index.php">
         <input type="radio" value="klaas" id="1" name="persoon">
         <label for="1">Klaas</label>
