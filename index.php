@@ -1,3 +1,8 @@
+<?php
+echo $_POST["persoon"]
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
