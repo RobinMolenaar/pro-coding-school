@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+       <!-- voorbeeld dropdown -->
     <!-- <form method="post" action="index.php">
         <input type="radio" value="klaas" id="1" name="persoon">
         <label for="1">Klaas</label>
