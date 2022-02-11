@@ -1,55 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mystyle.css">
-    <title>Partij Selectie</title>
-</head>
+<?php
+include("assets/includes/conf.php");
+include("assets/includes/header.php");
+
+$sql = "SELECT * FROM `party`";
+$result = $con->query($sql);
+?>
+
 <body>
-        <p class="heading-text">Kies hier u gewenste partij.</p>
-    </header>
-    <br>
-    <!-- partijen -->
-    <table>
-        <tr>
-            <th><img class="img"src="img/placeholder.jpg" alt="Placeholder"></th>
-            <th>
-                <h3>Partij</h3>
-                <p>De informatie over de partij.</P>
-            </th>
-        </tr>
-        <tr>
-            <th><img class="img"src="img/placeholder.jpg" alt="Placeholder"></th>
-            <th>
-                <h3>Partij</h3>
-                <p>De informatie over de partij.</P>
-            </th>
-        </tr>
-        <tr>
-            <th><img class="img"src="img/placeholder.jpg" alt="Placeholder"></th>
-            <th>
-                <h3>Partij</h3>
-                <p>De informatie over de partij.</P>
-            </th>
-        </tr>
-        <tr>
-            <th><img class="img"src="img/placeholder.jpg" alt="Placeholder"></th>
-            <th>
-                <h3>Partij</h3>
-                <p>De informatie over de partij.</P>
-            </th>
-        </tr>
-        <tr>
-            <th><img class="img"src="img/placeholder.jpg" alt="Placeholder"></th>
-            <th>
-                <h3>Partij</h3>
-                <p>De informatie over de partij.</P>
-            </th>
-        </tr>
-    </table>
-    <br>
-    <button class='welcome-button' type='button'>Volgende</button> 
+<?php
+if($result->num_rows > 0){
+  while($row = $result->fetch_assoc()){
+      echo "<div class='Partijvak'>";
+      echo "<img src='".$row['IMG']."'class='Partijlogo'>";
+      echo "<div class='Partijoprij'>";
+    echo "<a href='persoonselectie.php?Partij=".$row['ID']."' class='Partijknop'>".$row['Name']."</a>";
+    echo "<p>".$row['Description']."</p>";
+    echo "</div>";
+    echo "</div>";
+  }
+}
+?>
 </body>
 </html>
+

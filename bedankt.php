@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gellukt</title>
-    <link rel="stylesheet" href="mystyle.css">
-</head>
+<?php
+include("assets/includes/conf.php");
+include("assets/includes/header.php");
+?>
+
 <body class="welcome-body">
     <div class="heading-container">
         <div class='heading-text-container'>
