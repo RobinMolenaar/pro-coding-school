@@ -1,13 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>Document</title>
-</head>
+<?php
+include("assets/includes/conf.php");
+include("assets/includes/header.php");
+
+$sql = "SELECT ID, FirstName, LastName, IMG, PartyID FROM `members`;";
+$result = $con->query($sql);
+?>
+
 <body>
+<form method="post" action="">
+<?php
+if($result->num_rows > 0){
+  while($row = $result->fetch_assoc()){
+    echo "<input type='radio' value=".$row['ID']." id=".$row['ID']." name='member'>";
+    echo  "<label for=".$row['ID'].">".$row['FirstName']." ".$row['LastName']."</label>";
+  }
+}
+?>
+</form>
+
+
        <!-- voorbeeld dropdown -->
     <!-- <form method="post" action="index.php">
         <input type="radio" value="klaas" id="1" name="persoon">
@@ -22,7 +33,7 @@
     </form> -->
 
      <!-- dropdown VVD -->
-    <div class="w3-dropdown-click">
+    <!-- <div class="w3-dropdown-click">
   <button onclick="myFunction()" class="w3-button w3-black">VVD</button>
   <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
   <form method="post" action="index.php">
@@ -39,8 +50,8 @@
   </div>
 </div>
 
-<!-- dropdown PVDA -->
-<div class="w3-dropdown-click">
+© dropdown PVDA -->
+<!-- <div class="w3-dropdown-click">
   <button onclick="myFunction2()" class="w3-button w3-black">PVDA</button>
   <div id="Demo2" class="w3-dropdown-content w3-bar-block w3-border">
   <form method="post" action="index.php">
@@ -55,10 +66,10 @@
         <input type="submit" value="submit">
     </form>
   </div>
-</div>
+</div> -->
 
 
-<script>
+<!-- <script>
 function myFunction() {
   var x = document.getElementById("Demo");
   if (x.className.indexOf("w3-show") == -1) { 
@@ -76,6 +87,6 @@ function myFunction2() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
-</script>
+</script> --> 
 </body>
 </html>
