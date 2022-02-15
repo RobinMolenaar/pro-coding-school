@@ -1,8 +1,9 @@
 <?php
+//includes voor veel gebruikte queries en andere code
 include("assets/includes/conf.php");
 include("assets/includes/header.php");
 
-
+//query om personen uit de specifieke partijen op te halen
 $sql = "SELECT ID, FirstName, LastName, IMG, PartyID FROM `members` WHERE PartyID = " . $_GET['Partij'] . ";";
 $result = $con->query($sql);
 ?>
@@ -11,6 +12,7 @@ $result = $con->query($sql);
   <form method="post" action="">
     <div class="container">
       <?php
+      //partijen uitladen uit de database
       if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
           echo "<div class='Partijvak'>";
