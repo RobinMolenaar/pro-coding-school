@@ -59,4 +59,62 @@
 .img {
     width: 200px;
     height: 200px;
+
+}
+
+/* partijselectie pagina */
+.Partijknop {
+    max-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border: black 1px solid;
+}
+
+.Partijlogo {
+    max-width: 170px;
+    max-height: 170px;
+}
+
+.Partijvak {
+    width: 50%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.Partijoprij {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.persoonselect{
+    margin-left: 1em;
+}
+
+.terugknop{
+    position:absolute;
+    max-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border: black 1px solid;
+    margin: 1em;
+}
+
+.verstuurknop{
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px 10px;
+    text-align: center;
+    margin:1em;
 }
