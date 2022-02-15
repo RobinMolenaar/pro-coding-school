@@ -8,14 +8,22 @@ $result = $con->query($sql);
 
 <body>
 <form method="post" action="">
+<div class="container">
 <?php
 if($result->num_rows > 0){
   while($row = $result->fetch_assoc()){
-    echo "";
-    echo "<input type='radio' value=".$row['ID']." id=".$row['ID']." name='member'>";
+    echo "<div class='Partijvak'>";
+    echo "<img src='".$row['IMG']."'class='Partijlogo'>";
+    echo "<input type='radio' value=".$row['ID']." id=".$row['ID']." name='member' class='persoonselect'>";
     echo  "<label for=".$row['ID'].">".$row['FirstName']." ".$row['LastName']."</label>";
+  echo "</div>";
   }
 }
 ?>
+<button type="submit" class="verstuurknop">Verstuur</button>
+</div>
+
+</form>
+<a href="partijselectie.php" class="terugknop">Terug</a>
 </body>
 </html>
