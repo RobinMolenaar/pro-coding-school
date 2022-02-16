@@ -3,7 +3,7 @@ include("assets/includes/conf.php");
 include("assets/includes/header.php");
 ?>
 
-<body class="welcome-body">
+<body class="bedankt-body">
     <div class="heading-container">
         <div class='heading-text-container'>
             <p class="heading-text">Bedankt voor uw stem</p>
