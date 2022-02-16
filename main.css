@@ -15,6 +15,7 @@
 .bedankt-body {
     background-image: url("./assets/img/clark-van-der-beken-mcCAFvlzZFQ-unsplash.jpg");background-repeat: no-repeat;
     background-size: cover;
+    height: 768px;
 }
 
 /*heading */

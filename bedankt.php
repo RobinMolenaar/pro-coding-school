@@ -10,7 +10,7 @@ include("assets/includes/header.php");
             <p class="sub-text">U word over 10 seconden terug gestuurd naar de home pagina</p>     
             <progress value="0" max="10" id="progressBar"></progress>
         </div>     
-    </div>   
+    </div> 
     <script>
     var timeleft = 10;
     var downloadTimer = setInterval(function(){
