@@ -6,16 +6,18 @@
     font-family: Roboto;
 }
 
+/* background welcome */ 
 .welcome-body {
     background-image: url("./assets/img/tim-wildsmith-6SKUISCKrxc-unsplash.jpg");background-repeat: no-repeat;
     background-size: cover;
 }
-
+/* background bedankt */ 
 .bedankt-body {
     background-image: url("./assets/img/clark-van-der-beken-mcCAFvlzZFQ-unsplash.jpg");background-repeat: no-repeat;
     background-size: cover;
 }
 
+/*heading */
 .heading-container {
     background-image: linear-gradient(lightgrey, white);
     border-radius: 15px;
