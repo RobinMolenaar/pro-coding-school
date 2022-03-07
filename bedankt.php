@@ -1,3 +1,11 @@
+<?php
+if(!isset($_SESSION['code'])){
+    header('location:inlog.php');
+}
+
+session_destroy();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
