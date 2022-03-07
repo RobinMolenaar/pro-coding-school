@@ -62,6 +62,46 @@
 
 }
 
+.button-32 {
+  position: relative;
+  background: #000;
+  border: 0;
+  padding: 14px 42px;
+  border-radius: 3px;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: .2em;
+  box-shadow: 0 8px 32px rgba(#000,.2);
+  transition: all .2s ease;
+}
+.button-32:after {
+    content: '';
+    position: relative;
+    top: 0;
+    left: -200%;
+    width: 200%;
+    height: 100%;
+    transform: skewX(-20deg);
+    background-image: linear-gradient(to right,transparent,rgba(#fff,.3),transparent);   
+}
+.button-32:hover:after{
+    animation: shine 1.6s ease;
+}
+.button-32:active{
+    transform: translateY(1px);
+    box-shadow: 0 4px 16px rgba(#000,.2);
+}
+
+.cntr {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);   
+}
 /* partijselectie pagina */
 .Partijknop {
     max-height: 30px;
