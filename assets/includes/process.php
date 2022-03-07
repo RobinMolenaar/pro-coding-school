@@ -1,22 +1,49 @@
 <?php
-require("assets/includes/conf.php");
 
-        //get values from the from from inlog.php
-        $username = isset($_POST['name']) ? $_POST['name'] : '';
-        $password = isset($_POST['code']) ? $_POST['code'] : '';
+function test_input($data)
+{
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
 
-        //SQL injection prevention
-        $username = stripcslashes($username);
-        $password = stripcslashes($password);
+$code = test_input($_POST["code"]);
+if (!preg_match("/^[0-9']*$/", $code)) {
+    $errorMessage = "Code mag alleen uit cijfers bestaan.";
+} elseif (strlen($code) != 8) {
+    $errorMessage = "Code moet 8 cijfers lang zijn.";
+} else {
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "selection";
 
-        //Query the database for user
-        $result = mysqli_query("SELECT * FROM codes WHERE code = '".$_POST['name']."' and code = '".md5($_POST['code'])."'")
-            or die("Failed to query database" .mysqli_error());
-            $row = mysql_num_rows($result);
-        if ($row['name'] == $username && $row['code'] == $password ){
-            echo "Login succes";
-        } else {
-            echo "failed";
-        }
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    
+    $sql = "SELECT * FROM codes WHERE code=" . $code;
+    $result = $conn->query($sql);
+
+}
+ // echo $result->num_rows;
+ if ($result->num_rows == 1) {
+    $row = $result->fetch_assoc();
+     // echo "entered: " . $row["entered"] . " - used: " . $row["used"];
+     if (!empty($row["used"])) $errorMessage = "code is al gebruikt";
+     else {
+        $_SESSION["code"] = $code;
+        header("Location: ../../partijselectie.php");
+    }
+ }else {
+      // echo "0 results";
+      $errorMessage = "code bestaat niet";
+ }
+ $conn->close();
+
+
+
     
     
