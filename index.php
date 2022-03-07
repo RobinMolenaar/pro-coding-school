@@ -10,6 +10,5 @@ include("assets/includes/header.php");
             <button onclick="location.href='inlog.php'" class='welcome-button' type='button'>Breng uw stem uit</button>
         </div>     
     </div>   
-
 </body>
 </html>
