@@ -2,14 +2,17 @@
 //includes voor veel gebruikte queries en andere code
 include("assets/includes/conf.php");
 include("assets/includes/header.php");
+if(!isset($_SESSION['code'])){
+  header('location:inlog.php');
+}
 
 //query om personen uit de specifieke partijen op te halen
 $sql = "SELECT ID, FirstName, LastName, IMG, PartyID FROM `members` WHERE PartyID = " . $_GET['Partij'] . ";";
-$result = $con->query($sql);
+$result = $conn->query($sql);
 ?>
 
 <body>
-  <form method="post" action="">
+  <form method="post" action="assets/includes/voteProcess.php">
     <div class="container">
       <?php
       //partijen uitladen uit de database
@@ -19,6 +22,7 @@ $result = $con->query($sql);
           echo "<img src='" . $row['IMG'] . "'class='Partijlogo'>";
           echo "<input type='radio' value=" . $row['ID'] . " id=" . $row['ID'] . " name='member' class='persoonselect'>";
           echo  "<label for=" . $row['ID'] . ">" . $row['FirstName'] . " " . $row['LastName'] . "</label>";
+          echo  "<input type='hidden' name='Partij' value='".$_GET['Partij']."'></input>";
           echo "</div>";
         }
       }

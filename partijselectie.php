@@ -2,11 +2,13 @@
 //includes voor veel gebruikte queries en andere code
 include("assets/includes/conf.php");
 include("assets/includes/header.php");
-
+if(!isset($_SESSION['code'])){
+  header('location:inlog.php');
+}
 
 //sql query om de partijen op te halen
 $sql = "SELECT * FROM `party`";
-$result = $con->query($sql);
+$result = $conn->query($sql);
 ?>
 
 <body>

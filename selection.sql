@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 15 feb 2022 om 12:53
--- Serverversie: 10.4.22-MariaDB
--- PHP-versie: 8.1.2
+-- Gegenereerd op: 07 mrt 2022 om 22:51
+-- Serverversie: 10.4.11-MariaDB
+-- PHP-versie: 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,25 @@ SET time_zone = "+00:00";
 --
 -- Database: `selection`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `codes`
+--
+
+CREATE TABLE `codes` (
+  `ID` int(11) NOT NULL,
+  `code` varchar(8) CHARACTER SET latin1 DEFAULT NULL,
+  `used` tinyint(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `codes`
+--
+
+INSERT INTO `codes` (`ID`, `code`, `used`) VALUES
+(1, '12345678', 0);
 
 -- --------------------------------------------------------
 
@@ -265,7 +284,7 @@ CREATE TABLE `party` (
 --
 
 INSERT INTO `party` (`ID`, `Name`, `Description`, `IMG`, `Votes`) VALUES
-(1, 'CDA', 'Informatie over de partij', 'assets/img/placeholder.jpg', 6276),
+(1, 'CDA', 'Informatie over de partij', 'assets/img/placeholder.jpg', 6293),
 (2, 'Seniorenpartij Schagen', 'Informatie over de partij', 'assets/img/placeholder.jpg', 2920),
 (3, 'VVD', 'Informatie over de partij', 'assets/img/placeholder.jpg\r\n', 2605),
 (4, 'JessLokaal', 'Informatie over de partij', 'assets/img/placeholder.jpg', 2290),
@@ -278,6 +297,12 @@ INSERT INTO `party` (`ID`, `Name`, `Description`, `IMG`, `Votes`) VALUES
 --
 -- Indexen voor geëxporteerde tabellen
 --
+
+--
+-- Indexen voor tabel `codes`
+--
+ALTER TABLE `codes`
+  ADD PRIMARY KEY (`ID`) USING BTREE;
 
 --
 -- Indexen voor tabel `members`
@@ -294,6 +319,12 @@ ALTER TABLE `party`
 --
 -- AUTO_INCREMENT voor geëxporteerde tabellen
 --
+
+--
+-- AUTO_INCREMENT voor een tabel `codes`
+--
+ALTER TABLE `codes`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT voor een tabel `members`
