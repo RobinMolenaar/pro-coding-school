@@ -3,7 +3,7 @@
 $DATABASE_HOST = "localhost";
 $DATABASE_USER = "root";
 $DATABASE_PASS = "";
-$DATABASE_NAME = "selection";
+$DATABASE_NAME = "votingproject";
 
 //connectie query
 $conn = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
