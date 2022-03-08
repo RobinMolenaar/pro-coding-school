@@ -2,7 +2,7 @@
 //includes voor veel gebruikte queries en andere code
 include("assets/includes/conf.php");
 include("assets/includes/header.php");
-if(!isset($_SESSION['code'])){
+if (!isset($_SESSION['code'])) {
   header('location:inlog.php');
 }
 
@@ -22,15 +22,15 @@ $result = $conn->query($sql);
           echo "<img src='" . $row['IMG'] . "'class='Partijlogo'>";
           echo "<input type='radio' value=" . $row['ID'] . " id=" . $row['ID'] . " name='member' class='persoonselect'>";
           echo  "<label for=" . $row['ID'] . ">" . $row['FirstName'] . " " . $row['LastName'] . "</label>";
-          echo  "<input type='hidden' name='Partij' value='".$_GET['Partij']."'></input>";
+          echo  "<input type='hidden' name='Partij' value='" . $_GET['Partij'] . "'></input>";
           echo "</div>";
         }
       }
       ?>
       <div class="verstuurknop"><button type="submit">Verstuur</button></div>
     </div>
-    
-    
+
+
   </form>
   <a href="partijselectie.php" class="terugknop">Terug</a>
 

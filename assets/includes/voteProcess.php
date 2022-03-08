@@ -17,4 +17,3 @@ if($conn->query($sql)){
 }else{
     echo'nope toch niet';
 }
-?>

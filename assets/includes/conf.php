@@ -11,5 +11,3 @@ if(mysqli_connect_error()){
     exit("hij werkt niet" . mysqli_connect_error()); 
 }
 session_start();
-
-?>
