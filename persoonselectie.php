@@ -13,7 +13,7 @@ $result = $conn->query($sql);
 
 <body>
   <form method="post" action="assets/includes/voteProcess.php">
-    <div class="container">
+    <div class="containerP">
       <?php
       //partijen uitladen uit de database
       if ($result->num_rows > 0) {
@@ -27,10 +27,10 @@ $result = $conn->query($sql);
         }
       }
       ?>
-      <button type="submit" class="verstuurknop">Verstuur</button>
+      <div class="verstuurknop"><button type="submit">Verstuur</button></div>
     </div>
-
-
+    
+    
   </form>
   <a href="partijselectie.php" class="terugknop">Terug</a>
 

@@ -6,6 +6,10 @@
     font-family: Roboto;
 }
 
+body{
+    padding-bottom: 1em;
+}
+
 /* background welcome */ 
 .welcome-body {
     background-image: url("./assets/img/tim-wildsmith-6SKUISCKrxc-unsplash.jpg");background-repeat: no-repeat;
@@ -144,12 +148,26 @@
     flex-wrap: wrap;
 }
 
+.containerP{
+    margin-left: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.containerP:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
 .persoonselect{
     margin-left: 1em;
 }
 
 .terugknop{
-    position:absolute;
     max-height: 30px;
     text-align: center;
     text-decoration: none;
@@ -159,10 +177,11 @@
     margin: 1em;
 }
 
-.verstuurknop{
+.verstuurknop > button{
     background-color: white;
     border: 1px solid black;
     padding: 5px 10px;
     text-align: center;
     margin:1em;
+    margin-right: 5em;
 }

@@ -24,7 +24,7 @@ if ($result->num_rows == 1) {
     // echo "entered: " . $row["entered"] . " - used: " . $row["used"];
     if (!empty($row["used"])){ $errorMessage = "code is al gebruikt";}
     else {
-        $_SESSION["code"] = $code;
+        $_SESSION["code"] = $code; //12345678;
         header("Location: ../../partijselectie.php");
     }
 } else {
