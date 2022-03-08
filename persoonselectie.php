@@ -6,13 +6,17 @@ if (!isset($_SESSION['code'])) {
   header('location:inlog.php');
 }
 
+if(isset($_GET['Error'])){
+  echo('<div class="danger">Selecteer een persoon.</div>');
+}
+
 //query om personen uit de specifieke partijen op te halen
 $sql = "SELECT ID, FirstName, LastName, IMG, PartyID FROM `members` WHERE PartyID = " . $_GET['Partij'] . ";";
 $result = $conn->query($sql);
 ?>
 
 <body>
-  <form method="post" action="assets/includes/voteProcess.php">
+  <form method="post" onsubmit="return confirm('Weet u zeker dat u deze keuze wilt versturen?');" action="assets/includes/voteProcess.php">
     <div class="containerP">
       <?php
       //partijen uitladen uit de database
@@ -27,7 +31,7 @@ $result = $conn->query($sql);
         }
       }
       ?>
-      <div class="verstuurknop"><button type="submit">Verstuur</button></div>
+    <div class="verstuurknop"><button type="submit">Verstuur</button></div>
     </div>
 
 

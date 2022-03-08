@@ -24,6 +24,10 @@ body {
   height: 768px;
 }
 
+.black{
+    background-color: rgb(88, 88, 88);
+}
+
 /*heading */
 .heading-container {
   background-image: linear-gradient(lightgrey, white);
@@ -67,6 +71,7 @@ body {
 
 .code-input {
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .img {
@@ -161,7 +166,7 @@ body {
   flex-wrap: wrap;
 }
 
-.containerP:last-child {
+.containerP> button {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -189,4 +194,8 @@ body {
   text-align: center;
   margin: 1em;
   margin-right: 5em;
+}
+
+.danger{
+    color: red;
 }

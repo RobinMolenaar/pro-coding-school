@@ -7,21 +7,23 @@ $errorMessage = $_GET['error'];
 }
 ?>
 
-<body>
+<body class="black">
     <div class="heading-container">
-        <form class='heading-text-container' action="assets/includes/process.php" method="POST">
+        <div class="heading-text-container">
+        <form action="assets/includes/process.php" method="POST">
             <h1>Vul hier uw code</h1>
             <p>
                 <label>Uw code:</label>
                 <input class="code-input" type="password" id="code" name="code" />
             </p>
             <p>
-                <input class="" type="submit" id="inlog-btn" name="submit" value="Login" />
+                <input class="welcome-button" type="submit" id="inlog-btn" name="submit" value="Login" />
             </p>
             <p>
                 <?php if(isset($errorMessage)){echo $errorMessage;} ?>
             </p>
         </form>
+        </div>
     </div>
 </body>
 
