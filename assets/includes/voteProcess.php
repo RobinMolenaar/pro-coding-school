@@ -24,5 +24,5 @@ if (isset($_POST['member'])) {
     }
 }else{
     //if no person was selected send user back to selection with error message
-    header('location:../../persoonselectie.php?Partij='.$_POST['Partij'].'&Error=1');
+    header('location:../../personselection.php?Partij='.$_POST['Partij'].'&Error=1');
 }

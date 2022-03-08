@@ -1,5 +1,4 @@
 <?php
-//includes voor veel gebruikte queries en andere code
 include("assets/includes/conf.php");
 include("assets/includes/header.php");
 if(isset($_GET['error'])){

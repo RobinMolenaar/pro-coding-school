@@ -29,7 +29,7 @@ if ($result->num_rows == 1) {
         header('location:../../inlog.php?error='. $errorMessage);
     } else {
         $_SESSION["code"] = $code;
-        header("Location: ../../partijselectie.php");
+        header("Location: ../../partyselection.php");
     }
 } else {
     // echo "0 results";

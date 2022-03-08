@@ -1,5 +1,5 @@
 <?php
-//includes voor veel gebruikte queries en andere code
+//includes for common parts of code
 include("assets/includes/conf.php");
 include("assets/includes/header.php");
 if (!isset($_SESSION['code'])) {
@@ -10,7 +10,7 @@ if(isset($_GET['Error'])){
   echo('<div class="danger">Selecteer een persoon.</div>');
 }
 
-//query om personen uit de specifieke partijen op te halen
+//query to get certain people form 1 party
 $sql = "SELECT ID, FirstName, LastName, IMG, PartyID FROM `members` WHERE PartyID = " . $_GET['Partij'] . ";";
 $result = $conn->query($sql);
 ?>
@@ -19,7 +19,7 @@ $result = $conn->query($sql);
   <form method="post" onsubmit="return confirm('Weet u zeker dat u deze keuze wilt versturen?');" action="assets/includes/voteProcess.php">
     <div class="containerP">
       <?php
-      //partijen uitladen uit de database
+      //show people form database
       if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
           echo "<div class='Partijvak'>";
@@ -36,7 +36,7 @@ $result = $conn->query($sql);
 
 
   </form>
-  <a href="partijselectie.php" class="terugknop">Terug</a>
+  <a href="partyselection.php" class="terugknop">Terug</a>
 
 </body>
 
