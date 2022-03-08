@@ -2,7 +2,7 @@
 //includes voor veel gebruikte queries en andere code
 include("assets/includes/conf.php");
 include("assets/includes/header.php");
-if(!isset($_SESSION['code'])){
+if (!isset($_SESSION['code'])) {
   header('location:inlog.php');
 }
 
@@ -13,7 +13,7 @@ $result = $conn->query($sql);
 
 <body>
   <form method="post" action="assets/includes/voteProcess.php">
-    <div class="container">
+    <div class="containerP">
       <?php
       //partijen uitladen uit de database
       if ($result->num_rows > 0) {
@@ -22,12 +22,12 @@ $result = $conn->query($sql);
           echo "<img src='" . $row['IMG'] . "'class='Partijlogo'>";
           echo "<input type='radio' value=" . $row['ID'] . " id=" . $row['ID'] . " name='member' class='persoonselect'>";
           echo  "<label for=" . $row['ID'] . ">" . $row['FirstName'] . " " . $row['LastName'] . "</label>";
-          echo  "<input type='hidden' name='Partij' value='".$_GET['Partij']."'></input>";
+          echo  "<input type='hidden' name='Partij' value='" . $_GET['Partij'] . "'></input>";
           echo "</div>";
         }
       }
       ?>
-      <button type="submit" class="verstuurknop">Verstuur</button>
+      <div class="verstuurknop"><button type="submit">Verstuur</button></div>
     </div>
 
 
