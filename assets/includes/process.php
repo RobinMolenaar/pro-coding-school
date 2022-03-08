@@ -12,8 +12,10 @@ function test_input($data)
 $code = test_input($_POST["code"]);
 if (!preg_match("/^[0-9']*$/", $code)) {
     $errorMessage = "Code mag alleen uit cijfers bestaan.";
+    header('location:../../inlog.php?error='. $errorMessage);
 } elseif (strlen($code) != 8) {
     $errorMessage = "Code moet 8 cijfers lang zijn.";
+    header('location:../../inlog.php?error='. $errorMessage);
 } else {
     $sql = "SELECT * FROM codes WHERE code=" . $code;
     $result = $conn->query($sql);
@@ -24,12 +26,14 @@ if ($result->num_rows == 1) {
     // echo "entered: " . $row["entered"] . " - used: " . $row["used"];
     if (!empty($row["used"])) {
         $errorMessage = "code is al gebruikt";
+        header('location:../../inlog.php?error='. $errorMessage);
     } else {
-        $_SESSION["code"] = $code; //12345678;
+        $_SESSION["code"] = $code;
         header("Location: ../../partijselectie.php");
     }
 } else {
     // echo "0 results";
     $errorMessage = "code bestaat niet";
+    header('location:../../inlog.php?error='. $errorMessage);
 }
 $conn->close();
