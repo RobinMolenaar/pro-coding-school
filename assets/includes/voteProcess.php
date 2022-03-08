@@ -1,5 +1,4 @@
 <?php
-$_SESSION['code'] = 12345678;
 include('conf.php');
 
 if(!isset($_SESSION['code'])){
