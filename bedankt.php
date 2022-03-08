@@ -1,4 +1,5 @@
 <?php
+include('assets/includes/conf.php');
 if(!isset($_SESSION['code'])){
     header('location:inlog.php');
 }
