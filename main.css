@@ -127,6 +127,7 @@ body {
 /* partyselection */
 .Partijknop {
   max-height: 30px;
+  max-width: 12em;  
   text-align: center;
   text-decoration: none;
   color: black;
