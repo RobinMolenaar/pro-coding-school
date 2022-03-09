@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 08 mrt 2022 om 21:24
+-- Gegenereerd op: 09 mrt 2022 om 09:50
 -- Serverversie: 10.4.22-MariaDB
 -- PHP-versie: 8.1.2
 
@@ -74,12 +74,12 @@ INSERT INTO `members` (`ID`, `FirstName`, `LastName`, `PartyID`, `IMG`) VALUES
 (13, 'Y.A.', 'van Tol', 1, 'assets/img/cdayouri.jpg'),
 (14, 'P.H.M.', 'Huits', 1, 'assets/img/cdapeter.jpg'),
 (15, 'J.J.', 'Visser', 1, 'assets/img/placeholder.jpg'),
-(16, 'P.N.S.', 'Boon', 1, 'assets/img/cdapeterb.jpg'),
+(16, 'P.N.S.', 'Boon', 1, 'assets/img/placeholder.jpg'),
 (17, 'G.E.K.', 'Schouten', 1, 'assets/img/placeholder.jpg'),
 (18, 'W.M.', 'Niesten-Vork', 1, 'assets/img/placeholder.jpg'),
 (19, 'E.G.', 'van de Giesen-Ruiter', 1, 'assets/img/placeholder.jpg'),
 (20, 'J.C.J.', 'van Kampen', 1, 'assets/img/placeholder.jpg'),
-(21, 'C.W.', 'de Wit', 1, 'assets/img/cdakees.jpg'),
+(21, 'C.W.', 'de Wit', 1, 'assets/img/placeholder.jpg'),
 (22, 'H.', 'Tams-Ferwerda', 1, 'assets/img/placeholder.jpg'),
 (23, 'H.A.C.', 'Komproe', 1, 'assets/img/placeholder.jpg'),
 (24, 'L.W.M.', 'de Groot', 1, 'assets/img/placeholder.jpg'),
@@ -106,8 +106,8 @@ INSERT INTO `members` (`ID`, `FirstName`, `LastName`, `PartyID`, `IMG`) VALUES
 (45, 'S.P.T.', 'Boersen', 1, 'assets/img/placeholder.jpg'),
 (46, 'G.J.', 'Slijkerman', 1, 'assets/img/placeholder.jpg'),
 (47, 'S.J.A.', 'van der Veek', 1, 'assets/img/placeholder.jpg'),
-(48, 'S.M.', 'Lensink', 1, 'assets/img/cdasander.jpg'),
-(49, 'H.C.', 'Broersen', 1, 'assets/img/cdabram.jpg'),
+(48, 'S.M.', 'Lensink', 1, 'assets/img/placeholder.jpg'),
+(49, 'H.C.', 'Broersen', 1, 'assets/img/placeholder.jpg'),
 (50, 'J.C.J.', 'Beemsterboer', 1, 'assets/img/placeholder.jpg'),
 (51, 'P.F.J.', 'Vriend', 2, 'assets/img/placeholder.jpg'),
 (52, 'A.S.', 'Groot', 2, 'assets/img/placeholder.jpg'),
@@ -134,7 +134,7 @@ INSERT INTO `members` (`ID`, `FirstName`, `LastName`, `PartyID`, `IMG`) VALUES
 (73, 'E.J.M', 'van de Wateringen', 2, 'assets/img/placeholder.jpg'),
 (74, 'J.', 'Wit', 2, 'assets/img/placeholder.jpg'),
 (75, 'A.M.', 'van Wijk-Ligthart', 3, 'assets/img/vvdangelique.jpg'),
-(76, 'W.J.', 'Stam', 3, 'assets/img/willemjan.jpg'),
+(76, 'W.J.', 'Stam', 3, 'assets/img/vvdwillemjan.jpg'),
 (77, 'R.A.J.', 'Takes', 3, 'assets/img/vvdroel.jpg'),
 (78, 'J.', 'Perton', 3, 'assets/img/vvdjur.jpg'),
 (79, 'P.J.', 'Vlam', 3, 'assets/img/vvdpeter.jpg'),
@@ -187,7 +187,7 @@ INSERT INTO `members` (`ID`, `FirstName`, `LastName`, `PartyID`, `IMG`) VALUES
 (126, 'J.J.', 'Heddes', 5, 'assets/img/pvdahans.jpg'),
 (127, 'H.C.P.M.', 'Piket', 5, 'assets/img/pvdaharry.jpg'),
 (128, 'J.C.', 'Schrijver', 5, 'assets/img/pvdajan.jpg'),
-(129, 'S.E.B.', 'Juckenack', 5, 'assets/img/pvdassabine.jpg'),
+(129, 'S.E.B.', 'Juckenack', 5, 'assets/img/pvdasabine.jpg'),
 (130, 'B.', 'Blonk', 5, 'assets/img/placeholder.jpg'),
 (131, 'R.', 'Numan\r\n', 5, 'assets/img/pvdaroos.jpg'),
 (132, 'M.C.', 'van der Jagt', 5, 'assets/img/placeholder.jpg'),
@@ -207,10 +207,10 @@ INSERT INTO `members` (`ID`, `FirstName`, `LastName`, `PartyID`, `IMG`) VALUES
 (146, 'M.A.J.', 'Moussault', 5, 'assets/img/placeholder.jpg'),
 (147, 'F.', 'van Vliet', 5, 'assets/img/placeholder.jpg'),
 (148, 'M.A.', 'Leijen\r\n', 5, 'assets/img/pvdamarjan.jpg'),
-(149, 'L.A.J.', 'Riteco', 6, 'assets/img/gllambert.jpg'),
-(150, 'J.W.', 'Menkveld', 6, 'assets/img/gljoke.jpg'),
-(151, 'B.W.', 'Sintenie', 6, 'assets/img/glben.jpg'),
-(152, 'A.J.J.', 'Bijlsma', 6, 'assets/img/glandre.jpg'),
+(149, 'L.A.J.', 'Riteco', 6, 'assets/img/placeholder.jpg'),
+(150, 'J.W.', 'Menkveld', 6, 'assets/img/placeholder.jpg'),
+(151, 'B.W.', 'Sintenie', 6, 'assets/img/placeholder.jpg'),
+(152, 'A.J.J.', 'Bijlsma', 6, 'assets/img/placeholder.jpg'),
 (153, 'K.D.', 'Groen', 6, 'assets/img/placeholder.jpg'),
 (154, 'G.', 'Rot', 6, 'assets/img/placeholder.jpg'),
 (155, 'S.J.', 'Komen-de Leeuw', 6, 'assets/img/placeholder.jpg'),
@@ -252,7 +252,7 @@ INSERT INTO `members` (`ID`, `FirstName`, `LastName`, `PartyID`, `IMG`) VALUES
 (191, 'H.P.', 'Bredewold', 9, 'assets/img/wens4umerieke.jpg'),
 (192, 'J.H.', 'Freijsen-Vacano', 9, 'assets/img/wens4ujacqueline.jpg'),
 (193, 'M.C.', 'Verloop', 9, 'assets/img/wens4umargreet.jpg'),
-(194, 'L.', 'Steijger', 9, 'assets/img/wens4ulinda.jpg'),
+(194, 'L.', 'Steijger', 9, 'assets/img/placeholder.jpg'),
 (195, 'S.', 'Steijger', 9, 'assets/img/placeholder.jpg'),
 (196, 'F.', 'Hartman', 9, 'assets/img/placeholder.jpg'),
 (197, 'M.', 'Visscher-Spakman', 9, 'assets/img/placeholder.jpg'),
@@ -286,7 +286,7 @@ CREATE TABLE `party` (
 INSERT INTO `party` (`ID`, `Name`, `Description`, `IMG`, `Votes`) VALUES
 (1, 'CDA', 'Informatie over de partij', 'assets/img/logocda.jpg', 6293),
 (2, 'Seniorenpartij Schagen', 'Informatie over de partij', 'assets/img/logoss.jpg', 2920),
-(3, 'VVD', 'Informatie over de partij', 'assets/img/logovvd.jpg\n', 2605),
+(3, 'VVD', 'Informatie over de partij', 'assets/img/logovvd.jpg\n', 2606),
 (4, 'JessLokaal', 'Informatie over de partij', 'assets/img/logojl.jpg', 2290),
 (5, 'P.v.d.A.', 'Informatie over de partij', 'assets/img/logopvda.jpg', 1854),
 (6, 'GROENLINKS', 'Informatie over de partij', 'assets/img/logogl.jpg', 1221),
