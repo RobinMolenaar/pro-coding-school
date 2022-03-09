@@ -54,7 +54,8 @@ body {
 }
 
 .welcome-button {
-  padding: 20px;
+  padding: 15px;
+  border-radius: 25%;
 }
 
 .heading-text-container {
@@ -74,6 +75,11 @@ body {
   margin-bottom: 10px;
 }
 
+.code-container {
+  width: 90%;
+  padding: 10px;
+}
+
 .img {
   width: 200px;
   height: 200px;
@@ -81,7 +87,7 @@ body {
 
 .button-32 {
   position: relative;
-  background: #000;
+  background: gray;
   border: 0;
   padding: 14px 42px;
   border-radius: 3px;
@@ -192,10 +198,16 @@ body {
   padding: 20px;
 }
 
+.verstuurknop {
+  padding-top:  20px;
+  text-align: right;
+  width: 60%;
+}
+
 .verstuurknop > button {
   background-color: white;
   border: 1px solid black;
-  padding: 5px 10px;
+  padding: 10px 15px;
   text-align: center;
   margin: 1em;
   margin-right: 5em;
@@ -204,3 +216,5 @@ body {
 .danger{
     color: red;
 }
+
+
