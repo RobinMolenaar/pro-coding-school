@@ -16,6 +16,9 @@ $result = $conn->query($sql);
 ?>
 
 <body>
+  <div class="terugknop-container">
+    <a href="partyselection.php" class="terugknop">Terug</a>
+  </div>
   <form method="post" onsubmit="return confirm('Weet u zeker dat u deze keuze wilt versturen?');" action="assets/includes/voteProcess.php">
     <div class="containerP">
       <?php
@@ -36,8 +39,6 @@ $result = $conn->query($sql);
 
 
   </form>
-  <a href="partyselection.php" class="terugknop">Terug</a>
-
 </body>
 
 </html>
