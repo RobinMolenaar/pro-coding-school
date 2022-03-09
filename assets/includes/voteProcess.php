@@ -8,7 +8,7 @@ if (!isset($_SESSION['code'])) {
 }
 
 //add 1 vote to total
-$sql = "UPDATE party SET Votes = Votes+1 WHERE ID =" . $_POST['Partij'];
+$sql = "UPDATE members SET Votes = Votes+1 WHERE ID =" . $_POST['Partij'];
 //check if user selected a member
 if (isset($_POST['member'])) {
     if ($conn->query($sql)) {
