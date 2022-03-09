@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 09 mrt 2022 om 09:50
+-- Gegenereerd op: 09 mrt 2022 om 10:11
 -- Serverversie: 10.4.22-MariaDB
 -- PHP-versie: 8.1.2
 
@@ -284,15 +284,15 @@ CREATE TABLE `party` (
 --
 
 INSERT INTO `party` (`ID`, `Name`, `Description`, `IMG`, `Votes`) VALUES
-(1, 'CDA', 'Informatie over de partij', 'assets/img/logocda.jpg', 6293),
-(2, 'Seniorenpartij Schagen', 'Informatie over de partij', 'assets/img/logoss.jpg', 2920),
-(3, 'VVD', 'Informatie over de partij', 'assets/img/logovvd.jpg\n', 2606),
-(4, 'JessLokaal', 'Informatie over de partij', 'assets/img/logojl.jpg', 2290),
-(5, 'P.v.d.A.', 'Informatie over de partij', 'assets/img/logopvda.jpg', 1854),
-(6, 'GROENLINKS', 'Informatie over de partij', 'assets/img/logogl.jpg', 1221),
-(7, 'D66', 'Informatie over de partij', 'assets/img/logod66.jpg', 943),
-(8, 'SP', 'Informatie over de partij', 'assets/img/logosp.jpg', 875),
-(9, 'Wens4U', 'Informatie over de partij', 'assets/img/logow4u.jpg', 628);
+(1, 'CDA', 'Voor de volgende generatie', 'assets/img/logocda.jpg', 6293),
+(2, 'Seniorenpartij Schagen', 'Voor jong en oud', 'assets/img/logoss.jpg', 2921),
+(3, 'VVD', 'Voor vrijheid en democratie', 'assets/img/logovvd.jpg\n', 2606),
+(4, 'JessLokaal', 'Voor de gemeente', 'assets/img/logojl.jpg', 2290),
+(5, 'P.v.d.A.', 'Voor een eerlijker en fatsoenlijker land', 'assets/img/logopvda.jpg', 1854),
+(6, 'GROENLINKS', 'Voor samen verandering mogelijk maken', 'assets/img/logogl.jpg', 1221),
+(7, 'D66', 'Voor gelijke kansen', 'assets/img/logod66.jpg', 943),
+(8, 'SP', 'Voor heel de mens', 'assets/img/logosp.jpg', 875),
+(9, 'Wens4U', 'Voor het vergroten van geluk', 'assets/img/logow4u.jpg', 628);
 
 --
 -- Indexen voor geëxporteerde tabellen
