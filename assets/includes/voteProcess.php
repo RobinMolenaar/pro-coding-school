@@ -8,10 +8,11 @@ if (!isset($_SESSION['code'])) {
 }
 
 //add 1 vote to total
-$sql = "UPDATE members SET Votes = Votes+1 WHERE ID =" . $_POST['Partij'];
+$sql = "UPDATE Party SET Votes = Votes+1 WHERE ID =" . $_POST['Partij'];
+$sql2 = "UPDATE members SET Votes = Votes+1 WHERE ID =" . $_POST['member'];
 //check if user selected a member
 if (isset($_POST['member'])) {
-    if ($conn->query($sql)) {
+    if ($conn->query($sql) & $conn->query($sql2)) {
         $sql = "UPDATE `codes` SET `used` = 1 WHERE `code` = " . (int)$_SESSION['code'] . " ";
         if ($conn->query($sql)) {
             //if succesfull send user to bedankt.php
